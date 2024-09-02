@@ -20,6 +20,9 @@ class LoginLocators: #вход по логин и паролю
     LOGIN_REGISTRATION_PAGE = By.CLASS_NAME, 'Auth_link__1fOlj'  # переход на страницу ввода email , password. "Войти" на станице регистрации
     PASSWORD_RECOVERY = By.XPATH, './/a[@href="/forgot-password"]' #кнопка востановить пароль
     LOGIN_RECOVERY_PAGE = By.XPATH, './/a[@href="/login"]' #вход через кнопку в форме восстановления пароля.
+    LOGIN_BUTTON = By.XPATH, ".//button[text() = 'Войти']"
+    BUTGERS_PAGE = By.XPATH, ".//div[@class = 'BurgerIngredients_ingredients__menuContainer__Xu3Mo']" #отображение страницу с бургерами
+    OFFERD = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']" #кнопка Оформить заказ
 
 class AfterRegistrationLocators: #кнопки после атворизации в приложении
     PERCONAL_ACCOUNT_BUTTON = By.XPATH, ".//a[@href='/account']"  #кнопка Личный кабинет
