@@ -36,13 +36,11 @@ class AfterRegistrationLocators: #кнопки после атворизации
 
 
 class ConstructorLocators:
-    BULKI = By.XPATH, './/span[text() = "Булки"]'
-    SAUCE = By.XPATH, './/span[text() = "Соусы"]'
-    NACHINKA = By.XPATH, './/span[text() = "Начинки"]'
+    BULKI = By.XPATH, ".//div[@class = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']" #Раздел булки(активен)
+    SAUCE = By.XPATH, "//div[@class = 'tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect']/span[text()='Соусы']" #Раздел Соусы (раздел неактивен)
+    GO_TO_SAUCE = By.XPATH, ".//div[contains(@class, 'current')]" #Добавлен current после перехода в раздел Соус
+    NACHINKA = By.XPATH, "//div[@class = 'tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect']/span[text()='Начинки']" #Раздел Начинки (раздел неактивен)
+    GO_TO_NACHINKA = By.XPATH, ".//div[contains(@class, 'current')]" #Добавлен current после перехода в раздел Начинки
     BULKI_TITLE = By.XPATH, ".//h2[@class = 'text text_type_main-medium mb-6 mt-10' and text()='Булки']"
     SAUCE_TITLE = By.XPATH, ".//h2[@class = 'text text_type_main-medium mb-6 mt-10' and text()='Соусы']"
     NACHINKA_TITLE = By.XPATH, ".//h2[@class = 'text text_type_main-medium mb-6 mt-10' and text()='Начинки']"
-
-
-
-
