@@ -32,7 +32,7 @@ class AfterRegistrationLocators: #кнопки после атворизации
     SAVE_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']" #кнопка Сохранить
     BUTGERS_PAGE = By.XPATH, ".//div[@class = 'BurgerIngredients_ingredients__menuContainer__Xu3Mo']" #отображение страницу с бургерами
     OFFERD = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']" #кнопка Оформить заказ
-
+    LOGIN_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']" #кнопка "Войти"
 
 
 class ConstructorLocators:

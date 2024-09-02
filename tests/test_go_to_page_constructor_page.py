@@ -1,8 +1,6 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from src.config import Config
 from src.locators import AfterRegistrationLocators
-from src.data import get_exist_user_data
 import time
 
 
@@ -18,6 +16,7 @@ class TestConstructorPage:
         WebDriverWait(driver, 15).until(expected_conditions.visibility_of_element_located(AfterRegistrationLocators.BUTGERS_PAGE))
         element = driver.find_element(*AfterRegistrationLocators.OFFERD).text
         assert element == "Оформить заказ"
+        assert driver.find_element(*AfterRegistrationLocators.LOGO)
 
 
 
