@@ -29,6 +29,7 @@ class AfterRegistrationLocators: #кнопки после атворизации
     CONSTRUCTOR_BUTTON = By.XPATH, './/a[@href="/" and @class="AppHeader_header__link__3D_hX"]' #кнопка "Конструктор"
     LOGO = By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]" #логотип
     LOGOUT = By.XPATH, ".//button[@type='button' and text()='Выход']" #кнопка выход(на странице Личный кабинет)
+    SAVE_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']"
 
 
 class ConstructorLocators:
