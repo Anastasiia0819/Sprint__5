@@ -2,12 +2,11 @@ from selenium.webdriver.common.by import By
 
 
 class RegistrationLocators: #регистрация
-    #REGISTRATION_BUTTON = By.XPATH, ".//a[@href='/register']" #Кнопка "Зарегистрироваться (переход на заполнение регистрационных данных)"
     NAME_FIELD = By.XPATH, ".//label[text()='Имя']/following-sibling::input" #заполнение поля Имя
     EMAIL_FIELD = By.XPATH, ".//label[text()='Email']/following-sibling::input" #заполнение поля Email
     PASSWORD_FIELD = By.XPATH, './/input[@type="password"]' #заполнение поля Пароль
-    REGISTRATION_BUTTON = By.XPATH, './/button[@class="button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa"]' #кнопка "Зарегистрироваться
-    LOGIN_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']" #кнопка "Войти"
+    REGISTRATION_BUTTON = By.XPATH, './/button[contains(@class,"button_button_type_primary")]' #кнопка "Зарегистрироваться
+    LOGIN_BUTTON = By.XPATH, './/button[contains(@class,"button_button_type_primary")]' #кнопка "Войти"
     ERROR_PASSWORD = By.XPATH, ".//p[@class='input__error text_type_main-default']"
 
 
@@ -21,18 +20,18 @@ class LoginLocators: #вход по логин и паролю
     PASSWORD_RECOVERY = By.XPATH, './/a[@href="/forgot-password"]' #кнопка востановить пароль
     LOGIN_RECOVERY_PAGE = By.XPATH, './/a[@href="/login"]' #вход через кнопку в форме восстановления пароля.
     LOGIN_BUTTON = By.XPATH, ".//button[text() = 'Войти']"
-    BUTGERS_PAGE = By.XPATH, ".//div[@class = 'BurgerIngredients_ingredients__menuContainer__Xu3Mo']" #отображение страницу с бургерами
-    OFFERD = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']" #кнопка Оформить заказ
+    BUTGERS_PAGE = By.XPATH, ".//div[contains(@class, 'BurgerIngredients_ingredients__menuContainer')]" #отображение страницу с бургерами
+    OFFERD = By.XPATH, './/button[contains(@class,"button_button_type_primary")]' #кнопка Оформить заказ
 
 class AfterRegistrationLocators: #кнопки после атворизации в приложении
     PERCONAL_ACCOUNT_BUTTON = By.XPATH, ".//a[@href='/account']"  #кнопка Личный кабинет
-    CONSTRUCTOR_BUTTON = By.XPATH, './/a[@href="/" and @class="AppHeader_header__link__3D_hX"]' #кнопка "Конструктор"
+    CONSTRUCTOR_BUTTON = By.XPATH, ".//a[contains(@class, 'AppHeader_header__link_active')]" #кнопка "Конструктор"
     LOGO = By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]" #логотип
     LOGOUT = By.XPATH, ".//button[@type='button' and text()='Выход']" #кнопка выход(на странице Личный кабинет)
-    SAVE_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']" #кнопка Сохранить
-    BUTGERS_PAGE = By.XPATH, ".//div[@class = 'BurgerIngredients_ingredients__menuContainer__Xu3Mo']" #отображение страницу с бургерами
-    OFFERD = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg']" #кнопка Оформить заказ
-    LOGIN_BUTTON = By.XPATH, ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']" #кнопка "Войти"
+    SAVE_BUTTON = By.XPATH, ".//button[contains(@class, 'button_button_type_primary')]" #кнопка Сохранить
+    BUTGERS_PAGE = By.XPATH, ".//div[contains(@class, 'BurgerIngredients_ingredients__menuContainer')]" #отображение страницу с бургерами
+    OFFERD = By.XPATH, './/button[contains(@class,"button_button_type_primary")]' #кнопка Оформить заказ
+    LOGIN_BUTTON = By.XPATH, './/button[contains(@class,"button_button_type_primary")]' #кнопка "Войти"
 
 
 class ConstructorLocators:
